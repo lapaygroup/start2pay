@@ -1,9 +1,9 @@
 auth:
   host: https://sandapi.start2pay.com
-  username: PRSTThaiwaeP5ooy
-  password: aejohch7Iesu
-  salt: oe3QuooPohtahNei4aiShohquae4aiFo
-  callback_salt: dahv4aish9ee
+  username: login
+  password: password
+  salt: salt
+  callback_salt: callback salt
 
 display_options:
   language: ru
