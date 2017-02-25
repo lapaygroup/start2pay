@@ -9,7 +9,7 @@ use LapayGroup\Start2Pay\Exception\InvalidResponseException;
 
 class Api
 {
-    private $host = false; //Боевой https://api.start2pay.com
+    private $host = false;
     private $salt = false;
     private $callback_salt = false;
     private $username = false;
@@ -22,8 +22,8 @@ class Api
         //Парсим Yaml конфиг с данными для подключения
         $this->params = Yaml::parse(file_get_contents($config_file));
 
-        if (empty($params['host']) || empty($params['username']) || empty($params['password'])
-            || empty($params['salt']) || empty($params['callback_salt'])
+        if (empty($this->params['host']) || empty($this->params['username']) || empty($this->params['password'])
+            || empty($this->params['salt']) || empty($this->params['callback_salt'])
         ) {
             throw new ValidConfigAuthException('Auth info incorrect', 401);
         }
