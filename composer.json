@@ -1,0 +1,26 @@
+{
+  "name": "lapaygroup/start2pay",
+  "description": "Start 2 Pay PHP SDK",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/lapaygroup/start2pay/issues",
+    "source": "https://github.com/lapaygroup/start2pay"
+  },
+  "authors": [
+    {
+      "name": "Nikolay Lapay",
+      "email": "opensource@lapaygroup.ru"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "guzzlehttp/guzzle": "6.2.*",
+    "symfony/yaml"
+  },
+  "autoload": {
+    "psr-4": {
+      "LapayGroup\\Start2Pay\\": "src/"
+    }
+  }
+}

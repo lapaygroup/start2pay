@@ -1,0 +1,35 @@
+auth:
+  host: https://sandapi.start2pay.com
+  username: PRSTThaiwaeP5ooy
+  password: aejohch7Iesu
+  salt: oe3QuooPohtahNei4aiShohquae4aiFo
+  callback_salt: dahv4aish9ee
+
+display_options:
+  language: ru
+  iframe: 1
+  close_additional_tabs: 1
+  device: desktop
+  theme: layout2_black
+  message: false
+  description: 'Оплата услуг'
+  disable_payment_currency: false
+
+available_payment_systems:
+  in:
+    - qiwi
+    - yandex_money
+    - webmoney
+    - bank_cards
+    - moneta
+    - alfaclick
+    - yandex_money_bank_cards
+    - sbr
+    - mobile_commetce_russia
+    - rusterminal
+    - alipay
+  out:
+    - qiwi
+    - yandex_money
+    - bank_cards
+    - webmoney
