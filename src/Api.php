@@ -228,4 +228,25 @@ class Api
             throw new InvalidResponseException('Неверный ответ от сервера Start 2 Pay', 402);
         }
     }
+
+    /**
+     * Функция проверяет подпись в колбэке Start 2 Pay
+     * @param $json - JSON из колбэка Start 2 Pay
+     * @return bool true - подпись верна, false - не верна
+     */
+    public function validCallbackSignature($json)
+    {
+        $params = json_decode($json, true);
+        $signatureS2P = $params['signature'];
+        unset($params['signature']);
+
+        self::ksortTree($params);
+
+        $signature = hash('sha256', json_encode($params).$this->callback_salt);
+        if($signatureS2P == $signature) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
