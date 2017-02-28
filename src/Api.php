@@ -1,6 +1,6 @@
 <?php
 
-namespace Lapaygroup\Start2Pay;
+namespace LapayGroup\Start2Pay;
 
 use Symfony\Component\Yaml\Yaml;
 use GuzzleHttp\Client;

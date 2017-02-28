@@ -41,7 +41,7 @@ $payInfo['user_id'] = '123456';
 $payInfo['selected_payment_system'] = 'bank_cards';
 
 try {
-    $API = new \Lapaygroup\Start2Pay\API('path/to/config.yml');
+    $API = new \LapayGroup\Start2Pay\API('path/to/config.yml');
     $context = $API->getContext($payInfo);
     
     if (! empty($context['payment_url']) {
@@ -61,13 +61,13 @@ catch(\Exception $e) {
 Пример проверки подписи  
 ```php
 try {
-    $API = new \Lapaygroup\Start2Pay\API('path/to/config.yml');
+    $API = new \LapayGroup\Start2Pay\API('path/to/config.yml');
     $valid = $API->validCallbackSignature($json);
     
     if ($valid) {
         // Подпись верна - обрабатываем callback
     } else {
-        // Обрабатываем ошибку подписи
+        // Обрабатываем ошпше ибку подписи
     }
 }
 
