@@ -13,11 +13,11 @@ PHP SDK для интеграции с сервисом https://start2pay.com
 
 **Описание параметров:**
  - auth
-   - host
-   - username
-   - password
-   - salt
-   - callback_salt
+   - host - адрес API
+   - username - логин
+   - password - пароль
+   - salt - соль для создания контекста
+   - callback_salt - соль для подписи callbacks
  - display_options
    - language - язык платежной страницы
    - iframe - флаг использования iframe вместо переадресации на платежную страницу Start 2 Pay
